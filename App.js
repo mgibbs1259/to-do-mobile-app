@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
   },
   titleText: {
     color: 'white',
+    fontFamily: 'System',
     fontSize: 36,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
 });
