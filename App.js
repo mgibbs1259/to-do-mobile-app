@@ -1,29 +1,47 @@
 import React from 'react';
-import { ImageBackground, Text, View, StyleSheet } from 'react-native';
+import {
+  Text,
+  View,
+  StatusBar,
+  StyleSheet } from 'react-native';
 export default class App extends React.Component {
   render() {
     return (
-      <ImageBackground
-        source={require('./blue_background.jpeg')}
-        style={{width: '100%', height: '100%'}}>
-        <View style={styles.container}>
-          <Text style={styles.titleText}> Get Shit Done! </Text>
-        </View>
-      </ImageBackground>
+      <View style={styles.container}>
+        <StatusBar
+          barStyle='light-content'
+          backgroundColor='#87CEEB'
+        />
+        <Text style={styles.greeting}>
+          Get Shit Done!
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, tap the screen.
+        </Text>
+      </View>
     );
   }
 }
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    backgroundColor: '#87CEEB',
   },
-  titleText: {
+  greeting: {
     color: 'white',
     fontFamily: 'System',
     fontSize: 36,
     fontWeight: 'bold',
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    color: 'white',
+    fontFamily: 'System',
+    fontSize: 26,
+    textAlign: 'center',
+    marginBottom: 5,
   },
 });
