@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   greeting: {
     color: 'white',
     fontFamily: 'System',
-    fontSize: 36,
+    fontSize: 46,
     fontWeight: 'bold',
     textAlign: 'center',
     margin: 10,
@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
   button: {
     height: 45,
     width: 350,
+    borderRadius: 10,
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center'
