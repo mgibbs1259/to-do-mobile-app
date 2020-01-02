@@ -1,2 +1,2 @@
-# To Do mobile app
-A To Do mobile app
+# To Do Mobile App
+To Do mobile app 
